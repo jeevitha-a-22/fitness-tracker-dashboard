@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container py-4">
+
+    <h2 class="text-center mb-4 fw-bold">🏋️ My Fitness Tracker Dashboard</h2>
+
+    <!-- Workout Log Form -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header text-white bg-primary">Log Workout</div>
+      <div class="card-body">
+        <form id="workoutForm" class="row g-3">
+          
+          <!-- Workout Type Dropdown -->
+          <div class="col-md-4">
+            <select class="form-select" id="workoutType" required>
+              <option value="" disabled selected>Select Workout</option>
+              <option value="Running">🏃 Running</option>
+              <option value="Cycling">🚴 Cycling</option>
+              <option value="Yoga">🧘 Yoga</option>
+              <option value="Swimming">🏊 Swimming</option>
+              <option value="Gym">🏋️ Gym Workout</option>
+            </select>
+          </div>
+
+          <!-- Duration Dropdown -->
+          <div class="col-md-4">
+            <select class="form-select" id="duration" required>
+              <option value="" disabled selected>Select Duration</option>
+              <option value="15">15 Minutes</option>
+              <option value="30">30 Minutes</option>
+              <option value="45">45 Minutes</option>
+              <option value="60">1 Hour</option>
+              <option value="90">1.5 Hours</option>
+            </select>
+          </div>
+
+          <!-- Calories Dropdown -->
+          <div class="col-md-4">
+            <select class="form-select" id="calories" required>
+              <option value="" disabled selected>Select Calories Burned</option>
+              <option value="100">100 Calories</option>
+              <option value="200">200 Calories</option>
+              <option value="300">300 Calories</option>
+              <option value="400">400 Calories</option>
+              <option value="500">500 Calories</option>
+              <option value="600">600 Calories</option>
+              <option value="700">700 Calories</option>
+              <option value="800">800 Calories</option>
+              <option value="900">900 Calories</option>
+              <option value="1000">1000 Calories</option>
+            </select>
+          </div>
+
+          <div class="col-12 text-end">
+            <button type="submit" class="btn btn-success px-4">Add Workout</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Progress Chart -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-success text-white">📊 Progress Chart</div>
+      <div class="card-body">
+        <canvas id="progressChart" height="100"></canvas>
+      </div>
+    </div>
+
+    <!-- Workout List -->
+    <div class="card shadow-sm border-0">
+      <div class="card-header bg-info text-white">📝 Workout History</div>
+      <div class="card-body">
+        <ul id="workoutList" class="list-group"></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom JS -->
+  <script src="script1.js"></script>
+</body>
+</html>
