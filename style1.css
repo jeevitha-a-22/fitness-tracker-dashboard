@@ -1,0 +1,40 @@
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+.card {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+
+
+.bg-gradient-primary {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(90deg, #6c757d, #adb5bd);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(90deg, #17a2b8, #00d4ff);
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge-custom {
+  font-size: 0.85em;
+  padding: 0.4em 0.6em;
+  border-radius: 8px;
+}
+
