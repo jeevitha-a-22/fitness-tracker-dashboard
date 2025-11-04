@@ -44,4 +44,4 @@ The Fitness Tracker Dashboard is designed to provide users with an interactive a
 2. Open index.html in a web browser.
 3. Navigate through the pages using the menu.
 
-- Developed by Pavana MX , Jeevitha A , Rhea tess
+- Developed by Jeevitha A
